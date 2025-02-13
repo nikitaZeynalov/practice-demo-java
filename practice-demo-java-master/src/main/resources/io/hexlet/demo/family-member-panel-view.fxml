@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="520.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+        <Button fx:id="saveButton" focusTraversable="false" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Сохранить" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font></Button>
+   </bottom>
+   <center>
+       <VBox alignment="TOP_CENTER" prefHeight="543.0" prefWidth="181.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" prefHeight="25.0" prefWidth="100.0" text="ФИО">
+                    <font>
+                        <Font name="Calibri" size="12.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="fullName" focusTraversable="false" prefHeight="25.0" prefWidth="300.0">
+                    <font>
+                        <Font name="Calibri" size="12.0" />
+                    </font>
+                </TextField>
+                <Label alignment="CENTER" prefHeight="25.0" prefWidth="100.0" text="День рождения">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></Label>
+                <DatePicker fx:id="birthday" layoutX="10.0" layoutY="27.0" opacity="0.85" />
+                <Label alignment="CENTER" prefHeight="25.0" text="Должность">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></Label>
+                <TextField fx:id="profession" focusTraversable="false" prefHeight="25.0" prefWidth="300.0">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></TextField>
+                <Label alignment="CENTER" prefHeight="25.0" text="Место работы">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></Label>
+                <TextField fx:id="organization" focusTraversable="false" prefHeight="25.0" prefWidth="300.0">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></TextField>
+                <Label alignment="CENTER" prefHeight="25.0" prefWidth="106.0" text="Месячный доход">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></Label>
+                <TextField fx:id="salary" focusTraversable="false" prefHeight="25.0" prefWidth="300.0">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></TextField>
+            </children>
+        </VBox>
+   </center>
+   <top>
+      <Label text="Член семьи" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="30.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+   </top>
+   <padding>
+      <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+   </padding>
+</BorderPane>
